@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>차애담</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 class="blind">차애담</h1>
+    <div id="popup">
+        <h2>택배 접수 중지 안내</h2>
+        <h3>전라북도 익산시 / 정읍시 일부 지역의<br>
+            집배점과 배송기사 간 갈등으로<br>
+            배송 거부 상황이 발생하여,<br>
+            해당 지역의 배송이 지연될 수 있습니다.<br>
+            이용에 불편을 드려 죄송합니다.<br>
+        </h3>
+        <p>기간 : 08.20(금)부터<br>대상 : 전라북도 익산시, 정읍시 지역</p>
+        <button class="close">닫기&times;</button>
+    </div>
+    <header>
+        <div id="headerTop">
+            <div class="headerTop_wrap">
+                <ul class="tnb">
+                    <li><a href="#">LOGIN / JOIN</a></li>
+                    <li><a href="#">CART</a></li>
+                    <li><a href="#">ORDER</a></li>
+                    <li><a href="#">MY PAGE</a></li>
+                </ul>
+                <div class="searchIcon">
+                    <a href="#"><img src="images/search.png" alt="검색아이콘"></a>
+                </div>
+            </div>
+        </div>
+        <div id="search">
+            <div class="search-wrap">
+                <input type="text" id="keywords">
+                <input type="submit" id="searchBtn">
+            </div>
+            <button class="up">닫기&times;</button>
+        </div>
+        <div id="headerBottom">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="차애담"></a>
+            </div>
+            <div class="mainNav">
+                <ul id="gnb">
+                    <li><a href="#">brand</a>
+                        <ul class="lnb">
+                            <li><a href="#">브랜드 소개</a></li>
+                            <li><a href="#">미디어</a></li>
+                            <li><a href="#">공지</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">offline</a>
+                        <ul class="lnb">
+                            <li><a href="#">라운지 소개</a></li>
+                            <li><a href="#">티 코스 소개</a></li>
+                            <li><a href="#">티 코스 메뉴</a></li>
+                            <li><a href="#">티 코스 예약하기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">online</a>
+                        <ul class="lnb">
+                            <li><a href="#">best</a></li>
+                            <li><a href="#">티, 티푸드</a></li>
+                            <li><a href="#">티웨어</a></li>
+                            <li><a href="#">gift &amp; set</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">event</a>
+                        <ul class="lnb">
+                            <li><a href="#">이벤트 소식</a></li>
+                            <li><a href="#">라운지</a></li>
+                            <li><a href="#">멤버십</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">play</a>
+                        <ul class="lnb">
+                            <li><a href="#">차애담 매거진</a></li>
+                            <li><a href="#">차애담 유튜브</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">review</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="slide">
+        <ul id="imgs">
+            <li>
+                <a href="#">
+                    <img src="images/slide1.jpg" alt="슬라이드1">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/slide2.jpg" alt="슬라이드2">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/slide3.jpg" alt="슬라이드3">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/slide4.jpg" alt="슬라이드4">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section id="main">
+        <article id="best">
+            <h2>best</h2>
+            <ul class="bestList">
+                <li>
+                    <figure class="sale">
+                        <img src="images/peppermint1.png" alt="페퍼민트20티백">
+                        <figcaption class="title">페퍼민트 20티백</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <del class="saleBefore">20,000원</del>
+                            <span class="relPrice">18,000원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/hibiscus1.png" alt="히비스커스10티백">
+                        <figcaption class="title">히비스커스 10티백</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <span class="relPrice">9,900원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/juice1.png" alt="비타민+abc주스">
+                        <figcaption class="title">비타민+ abc주스 10파우치</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <span class="relPrice">26,940원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+                <li>
+                    <figure class="sale">
+                        <img src="images/chamomile1.png" alt="캐모마일 허브티 15g">
+                        <figcaption class="title">캐모마일 허브티 15g x 6개</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <del class="saleBefore">120,000원</del>
+                            <span class="relPrice">96,000원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <article id="product">
+            <h2>product</h2>
+            <ul class="proList">
+                <li>
+                    <figure class="soldOut">
+                        <img src="images/cake.png" alt="녹차 크레이프">
+                        <figcaption class="title">제주 녹차 크레이프 케이크</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <span class="relPrice">42,000원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/chamomile2.png" alt="레몬 캐모마일 10티백">
+                        <figcaption class="title">레몬 캐모마일 10티백</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <span class="relPrice">4,980원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+                <li>
+                    <figure class="new">
+                        <img src="images/hibiscus2.png" alt="추출분말 히비스커스">
+                        <figcaption class="title">추출분말 히비스커스 12스틱</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <span class="relPrice">10,000원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+                <li>
+                    <figure class="sale">
+                        <img src="images/juice2.png" alt="abc+ 착즙분말">
+                        <figcaption class="title">abc+ 착즙분말 20스틱</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <del class="saleBefore">13,900원</del>
+                            <span class="relPrice">9,730원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/porcelain.png" alt="돋을문 다관세">
+                        <figcaption class="title">백자 응양각 돋을문 다관세</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <span class="relPrice">146,000원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+                <li>
+                    <figure class="soldOut">
+                        <img src="images/teapot.png" alt="티팟세트">
+                        <figcaption class="title">쓰리코 티팟 세트</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <span class="relPrice">150,000원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/teaspoon.png" alt="LT 티스푼">
+                        <figcaption class="title">LT 티스푼</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <span class="relPrice">8,000원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/cup.png" alt="유니티 유리컵">
+                        <figcaption class="title">유니티 유리컵</figcaption>
+                    </figure>
+                    <div class="priceInfo">
+                        <p class="price">
+                            <span class="relPrice">9,000원</span>
+                        </p>
+                    </div>
+                    <div class="orderBtn">
+                        <input type="button" class="basket" value="담기">
+                        <input type="button" class="buy" value="구매">
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <article id="story">
+            <h2>story</h2>
+            <div class="storyWrap">
+                <div class="storyText">
+                    <h3>차愛담</h3>
+                    <p>차를 마신다는 건 사소한 행위이지만 삶을 바꾸는 건 언제나 사소한 순간들이지요.<br>
+                        ‘차애(愛) 모든 것을 담았다.’는 모토 아래 차애담은 차와 일상의 즐거움,<br>
+                        그리고 개인의 취향을 블렌딩 해 가장 감각적이고 소중한 순간의 경험을 선사합니다.</p>
+                </div>
+            </div>
+        </article>
+        <article id="magazine">
+            <h2>magazine</h2>
+            <ul class="magazineList">
+                <li>
+                    <a href="#">
+                        <img src="images/magazine1.png" alt="차 취향 알아보기">
+                        <p><span class="bold">나의 차 취향 알아보기</span><br>일상을 함께 할 차 알아보기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/magazine2.png" alt="회원가입 이벤트">
+                        <p><span class="bold">지금 회원가입하면 990원</span><br>차애담 리뉴얼 기념 한정수량</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/magazine3.png" alt="선물하기 좋은 추천템">
+                        <p><span class="bold">지금 선물하기 좋은 추천템</span><br>여름 갈증을 해소하기 좋은 차</p>
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <aside>
+        <div id="banner">
+            <div class="bannerWrap">
+                <div class="bannerText">
+                    <h4>여름 속 차애담</h4>
+                    <p>궁궐에선 어떻게 여름을 보냈을까요?</p>
+                    <p>궁중 다과와 함께 차애담이 여러분께<br>새로운 여름의 차를 선보입니다.</p>
+                    <button class="more">지금 알아보러 가기</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div id="info">
+            <div class="cs">
+                <h5>c/s center<span class="thin">통화량이 많을 때는 q&amp;a를 이용해주세요</span></h5>
+                <ul class="csInfo">
+                    <li>070.3910.5413</li>
+                    <li>화~토 13:30-19:30 (일, 월 휴무)<br>티 코스 이용 및 예약, 오프라인 제품 구매 문의</li>
+                </ul>
+                <ul class="csInfo">
+                    <li>070.3910.5414</li>
+                    <li>월~금 10:30-18:30 (토, 일 휴무)<br>온라인 제품 구매, 배송, 도매 협업 및 기타 문의</li>
+                </ul>
+            </div>
+            <div class="bank">
+                <h5>bank info</h5>
+                <p>국민은행 541301.02.391080<br>예금주 차애담</p>
+            </div>
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="images/sns1.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/sns2.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="images/sns3.png" alt="유튜브"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="fbox">
+            <div class="fboxWrap">
+                <div class="notice">
+                    <h5>notice</h5>
+                    <ul class="noticeList">
+                        <li><a href="#">사회적 거리두기 관련 공지</a></li>
+                        <li><a href="#">차애담 라운지 티 코스 재개 안내</a></li>
+                        <li><a href="#">차애담 라운지 티 코스 운영 시간 변동 안내</a></li>
+                        <li><a href="#">일부 배송 지연 안내</a></li>
+                        <li><a href="#">2021 연휴 배송 일정 공지</a></li>
+                    </ul>
+                </div>
+                <div class="fmenu">
+                    <ul id="bnb">
+                        <li><a href="#">about us</a>
+                            <ul class="subBnb">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">채용</a></li>
+                                <li><a href="#">멤버십 안내</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">c/s center</a>
+                            <ul class="subBnb">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">q&amp;a</a></li>
+                                <li><a href="#">상품후기</a></li>
+                                <li><a href="#">개인결제</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">my page</a>
+                            <ul class="subBnb">
+                                <li><a href="#">관심상품</a></li>
+                                <li><a href="#">주문조회</a></li>
+                                <li><a href="#">장바구니</a></li>
+                                <li><a href="#">쿠폰조회</a></li>
+                                <li><a href="#">회원정보 수정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">partner</a>
+                            <ul class="subBnb">
+                                <li><a href="#">파트너 현황</a></li>
+                                <li><a href="#">전용상품</a></li>
+                                <li><a href="#">파트너 문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="copy">
+            <div class="fnb">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용안내</a></li>
+                </ul>
+            </div>
+            <address>
+                <p>상호 : 차애담 대표 : 차담 사업자등록번호 : 391-08-41453 통신판매업 신고 : 2021-광주-1708호<br>
+                    전화 : 080.3910.5413 주소: 광주광역시 서구 경열로 3 ( 농성동 271-4 ) 개인정보관리책임자 : 홍길동(cspartner@chaedam.com)</p>
+            </address>
+        </div>
+    </footer>
+
+    <script src="script/main.js"></script>
+</body>
+
+</html>
