@@ -220,7 +220,7 @@ ul {
     width: 140px;
     height: 40px;
     line-height: 40px;
-    transition-duration: all .4s;
+    transition: all .4s;
 }
 
 .lnb>li>a:hover {
